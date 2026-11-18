@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vercel/
+.DS_Store
+*.log
+Identidad visual.ai
+logo sandos.jpg
+DESIGN referencia.md

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Sandos — Agencia Creativa & Social Media 360° • NQN • BUE</title>
+    <meta
+      name="description"
+      content="Sandos | Agencia Creativa. +200 marcas potenciadas en Argentina. Contenido, Ads & Estrategia 360° en Neuquén y Buenos Aires."
+    />
+    <link rel="icon" type="image/jpeg" href="/assets/logo-sandos.jpg" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/beni-black.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/clash-grotesk-medium.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/clash-grotesk-bold.woff2" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="global-bg" class="global-bg" aria-hidden="true"></div>
+    <div id="app"></div>
+
+    <!-- Native Case Preview Dialog -->
+    <dialog id="case-dialog" class="foudre-dialog" closedby="any" aria-labelledby="case-dialog-title">
+      <div class="foudre-dialog-inner">
+        <div class="foudre-dialog-top">
+          <span id="case-dialog-tag" class="foudre-pill-tag foudre-pill-tag--magenta">PROYECTO</span>
+          <form method="dialog">
+            <button type="submit" class="foudre-circle-close" aria-label="Cerrar detalle del caso">
+              ✕
+            </button>
+          </form>
+        </div>
+
+        <div class="foudre-dialog-grid">
+          <div class="foudre-dialog-media">
+            <img
+              id="case-dialog-img"
+              src="/assets/ig/post-01-empresa.jpg"
+              alt=""
+              width="640"
+              height="640"
+              fetchpriority="low"
+            />
+          </div>
+          <div class="foudre-dialog-copy">
+            <span id="case-dialog-meta" class="foudre-dialog-meta">AOG PATAGONIA · NQN</span>
+            <h2 id="case-dialog-title" class="foudre-dialog-title">Título del caso</h2>
+            <p id="case-dialog-desc" class="foudre-dialog-desc"></p>
+            <div id="case-dialog-pills" class="foudre-dialog-pills"></div>
+            <div class="foudre-dialog-actions">
+              <a
+                id="case-dialog-ig"
+                href="https://www.instagram.com/sandosagency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="foudre-btn foudre-btn--dark"
+              >
+                Ver en Instagram ↗
+              </a>
+              <a
+                href="https://wa.link/j0lsf6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="foudre-btn foudre-btn--magenta"
+              >
+                Quiero algo así →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Native 3-Step Contact Quiz Dialog -->
+    <dialog id="quiz-dialog" class="foudre-quiz-dialog" closedby="any" aria-labelledby="quiz-dialog-title">
+      <div class="quiz-lightning-wrap">
+        <div class="quiz-surface">
+          <div class="quiz-header">
+            <span class="quiz-step-label">SANDOS // BRIEF EN 1 MINUTO</span>
+            <form method="dialog">
+              <button type="submit" class="foudre-circle-close" aria-label="Cerrar quiz de contacto">
+                ✕
+              </button>
+            </form>
+          </div>
+
+          <h2 id="quiz-dialog-title" class="quiz-title">CONTANOS TU PROYECTO.</h2>
+
+          <form id="quiz-form" class="quiz-form">
+            <fieldset class="quiz-fieldset">
+              <legend>01 · ¿En qué podemos potenciar tu marca?</legend>
+              <div class="quiz-pills" role="group" aria-label="Servicios de interés">
+                <label class="quiz-pill-check">
+                  <input type="checkbox" name="services" value="Contenido & Reels 360°" checked />
+                  <span>Contenido & Reels 360°</span>
+                </label>
+                <label class="quiz-pill-check">
+                  <input type="checkbox" name="services" value="Cobertura en Campo / Expos" />
+                  <span>Cobertura en Campo / Expos</span>
+                </label>
+                <label class="quiz-pill-check">
+                  <input type="checkbox" name="services" value="Sandos Studio & Podcast" />
+                  <span>Sandos Studio & Podcast</span>
+                </label>
+                <label class="quiz-pill-check">
+                  <input type="checkbox" name="services" value="Paid Media & Ads" />
+                  <span>Paid Media & Ads</span>
+                </label>
+                <label class="quiz-pill-check">
+                  <input type="checkbox" name="services" value="Posicionamiento B2B / Energía" />
+                  <span>Posicionamiento B2B / Energía</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="quiz-fieldset">
+              <legend>02 · ¿Desde dónde opera tu empresa?</legend>
+              <div class="quiz-pills" role="group" aria-label="Ubicación">
+                <label class="quiz-pill-check">
+                  <input type="radio" name="location" value="Neuquén / Patagonia" checked />
+                  <span>Neuquén / Patagonia</span>
+                </label>
+                <label class="quiz-pill-check">
+                  <input type="radio" name="location" value="Buenos Aires" />
+                  <span>Buenos Aires</span>
+                </label>
+                <label class="quiz-pill-check">
+                  <input type="radio" name="location" value="Todo el país / Remoto" />
+                  <span>Todo el país / Remoto</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="quiz-inputs">
+              <div>
+                <label for="quiz-brand">03 · Tu nombre o empresa</label>
+                <input
+                  id="quiz-brand"
+                  type="text"
+                  name="brand"
+                  autocomplete="organization"
+                  placeholder="Ej: Martín — Ingeniería Austral"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="quiz-footer-actions">
+              <button type="submit" class="foudre-btn foudre-btn--dark">
+                Enviar resumen directo a WhatsApp →
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
